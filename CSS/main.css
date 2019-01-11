@@ -1,0 +1,111 @@
+.parent{
+	width: 100%;
+	background: white;
+	display: grid;
+	grid-template-columns: 80%; 
+	grid-column-gap: 10px;
+	justify-content: center;
+	}
+div{
+	height: auto;
+	border: solid black 2px;
+}
+
+.datos{
+width: auto;
+	justify-content: justify;
+border:none;
+
+}
+.skills{
+	display: grid;
+	grid-column-gap: 10px;
+	grid-template-columns: 80%;
+	justify-content: center;
+
+}
+.foto{
+display:none;
+}
+.personal{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 35% 35%;		
+		justify-content: justify;
+
+		
+}
+	.skill1,.skill2{
+		display: none;
+	}
+	.skill{
+		display:inline;
+	}
+	.experiencia1{
+		display: none;
+	}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.foto{
+		display:none;
+	}
+	.skills{
+	display: grid;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px ;
+	grid-template-columns: 40% 40%;
+	justify-content: center;
+
+}
+	.skill1,.skill{
+		display:inline;
+		align-content: center
+
+	}
+	.skill2{
+		display: none;
+	}
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.foto{
+		display:none;
+	}
+	.skill1,.skill2,.skill{
+		display:inline;
+		align-content: center
+
+	}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+.foto{
+		display:inline;
+	}
+
+	.skills{
+	display: grid;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px ;
+	grid-template-columns: 20% 20% 20% 20%;
+	justify-content: center;
+
+
+}
+.skill1,.skill2,.skill{
+		display:inline;
+		align-content: center
+
+	}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	.foto{
+		display:inline;
+	}
+}
